@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-08T02:00:05.346579" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\moumitajoardar\PycharmProjects\RobotAssignment\Assignment\Test1.robot">
+<test id="s1-t1" name="Login" line="14">
+<kw name="open the browser with the url" owner="resource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:05.662011" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-09-08T02:00:05.662011" elapsed="2.304582"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:07.966593" level="INFO">Opening url 'https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-08T02:00:07.966593" elapsed="4.187703"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-08T02:00:12.154296" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-08T02:00:12.154296" elapsed="0.047913"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:05.662011" elapsed="6.540198"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:12.204209" level="INFO">Typing text 'john' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:12.203209" elapsed="0.100683"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:12.303892" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-09-08T02:00:12.339048" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:12.303892" elapsed="0.095253"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2024-09-08T02:00:12.203209" elapsed="0.195936"/>
+</kw>
+<kw name="Click on the Log In button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:12.401185" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<arg>xpath://input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:12.400174" elapsed="3.710059"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:12.400174" elapsed="3.710605"/>
+</kw>
+<kw name="Close Browser Session" owner="resource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-08T02:00:16.112382" elapsed="2.596695"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:16.111331" elapsed="2.597746"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:05.662011" elapsed="13.047066"/>
+</test>
+<test id="s1-t2" name="Verify Title" line="18">
+<kw name="open the browser with the url" owner="resource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:18.709077" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-09-08T02:00:18.709077" elapsed="2.138621"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:20.848373" level="INFO">Opening url 'https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-08T02:00:20.848373" elapsed="3.939389"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-08T02:00:24.787762" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-08T02:00:24.787762" elapsed="0.047193"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:18.709077" elapsed="6.125878"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:24.835997" level="INFO">Typing text 'john' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:24.835997" elapsed="0.158615"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:24.994612" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-09-08T02:00:25.015968" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:24.994612" elapsed="0.139218"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2024-09-08T02:00:24.835997" elapsed="0.297833"/>
+</kw>
+<kw name="Click on the Log In button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:25.133830" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<arg>xpath://input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T02:00:25.133830" elapsed="1.603134"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:25.133830" elapsed="1.603134"/>
+</kw>
+<kw name="Validate the title of the page">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-09-08T02:00:26.749474" level="INFO">${actual_title} = ParaBank | Accounts Overview</msg>
+<var>${actual_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-09-08T02:00:26.736964" elapsed="0.012510"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-08T02:00:26.749474" level="INFO">ParaBank | Accounts Overview</msg>
+<arg>${actual_title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-08T02:00:26.749474" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual_title}</arg>
+<arg>ParaBank | Accounts Overview</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-08T02:00:26.749474" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:26.736964" elapsed="0.012510"/>
+</kw>
+<kw name="Close Browser Session" owner="resource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-08T02:00:26.749474" elapsed="2.531593"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:26.749474" elapsed="2.531593"/>
+</kw>
+<status status="PASS" start="2024-09-08T02:00:18.709077" elapsed="10.571990"/>
+</test>
+<doc>Login and validate Title name</doc>
+<status status="PASS" start="2024-09-08T02:00:05.362257" elapsed="23.918810"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
